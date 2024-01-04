@@ -7,3 +7,7 @@ def print_items(n):
 
 print_items(10)
 
+
+#ran n+n - 2n times
+# so its O(2n) and O(n) as dropped constants
+
