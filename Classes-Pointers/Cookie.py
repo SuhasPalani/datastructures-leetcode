@@ -1,5 +1,5 @@
 class Cookie:
-    def __init__(self, color):
+    def __init__(self, color): #self - method 
         self.color = color
 
     def get_color(self):
