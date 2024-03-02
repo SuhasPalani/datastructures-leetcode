@@ -1,5 +1,5 @@
 class Cookie:
-    def __init__(self, color): #self - method 
+    def __init__(self, color): #self - method constructor
         self.color = color
 
     def get_color(self):
@@ -16,6 +16,8 @@ print('Cookie one is', cookie_one.get_color())
 print('Cookie two is', cookie_two.get_color())
 
 cookie_one.set_color('yellow')
+cookie_two.set_color('black')
+
 
 print('\nCookie one is now', cookie_one.get_color())
 print('Cookie two is still', cookie_two.get_color())
