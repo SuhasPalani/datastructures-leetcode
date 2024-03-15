@@ -12,12 +12,12 @@ class HashTable:
             my_hash = (my_hash + ord(letter) * 23) % len(self.data_map)
         return my_hash  
     
-    ## WRITE SET_ITEM METHOD HERE ##
-    #                              #
-    #                              #
-    #                              #
-    #                              #
-    ################################
+    def set_item(self,key,value):
+        index=self.__hash(key)
+        if self.data_map[index] is None:
+            self.data_map[index]=[] # create empty list to store
+        self.data_map[index].append([key,value])
+        
     
         
 
