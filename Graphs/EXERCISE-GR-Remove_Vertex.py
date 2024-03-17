@@ -29,12 +29,13 @@ class Graph:
             return True
         return False
 
-    ## WRITE REMOVE_VERTEX METHOD HERE ##
-    #                                   #
-    #                                   #
-    #                                   #
-    #                                   #
-    ##################################### 
+    def remove_vertex(self,v1):
+        if v1 in self.adj_list.keys():
+            for other_v1 in self.adj_list[v1]:
+                self.adj_list[other_v1].remove(v1)
+            del self.adj_list[v1]
+            return True
+        return False
 
 
 
