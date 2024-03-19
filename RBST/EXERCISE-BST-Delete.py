@@ -101,10 +101,7 @@ class BinarySearchTree:
     def delete_node(self,val):
         self.__delete_node(self.root,val)
 
-    def min_value(self,current_node):
-        while current_node.left is not None:
-            current_node=current_node.left
-        return current_node.value
+    
 
 my_tree = BinarySearchTree()
 my_tree.r_insert(2)
